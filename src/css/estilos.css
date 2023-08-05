@@ -1,0 +1,164 @@
+body {
+  font-family: "Oxanium", cursive;
+  background-color: #000000;
+  color: #ffffff;
+}
+body::before{
+    content: "";
+    background-image: url(../imagens/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+}
+.cabecalho {
+  display: flex;
+  justify-content: center;
+}
+
+.selecao-de-personagens {
+  
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  min-height: calc(100vh - 152px);
+  justify-content: center;
+
+}
+
+.selecao-de-personagens .lista-de-personagens {
+  display: flex;
+  
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.selecao-de-personagens .personagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 585px;
+  gap: 25px;
+}
+
+.selecao-de-personagens .personagens .titulo {
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #47f4ff;
+  width: 100%;
+  text-align: center;
+}
+
+.lista-de-personagens .personagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.lista-de-personagens .personagem.selecionado {
+  box-shadow: 0px 0px 24px 5px #0271f7;
+}
+
+.personagem-selecionado {
+  text-align: center;
+  max-height: 530px;
+}
+
+.personagem-selecionado .persongem-grande {
+  width: 430px;
+  height: 430px;
+}
+
+.personagem-selecionado .nome-personagem {
+  border-bottom: 2px solid #47f4ff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.personagem-selecionado .descricao-personagem {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 20px;
+  width: 400px;
+}
+
+/* Criando uma regra para a classe shapes */
+.shapes {
+    height: 63px;
+    width: 63px;
+    background: grey;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    position: absolute;
+    top: 67px;
+    right: 10px;
+    /* Adicionando a propriedade transition para fazer uma transição suave entre os estados do elemento */
+    transition: all 0.2s ease-in;
+  }
+  
+  /* Criando uma regra para a classe shapes quando o mouse está sobre ela */
+  .shapes:hover {
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    /* Adicionando a propriedade transform para fazer o elemento rotacionar e escalar quando o mouse está sobre ele */
+    transform: rotate(360deg) scale(1.5);
+  }
+  .personagem {
+    /* Adicionando a propriedade filter para fazer o elemento ficar em preto e branco */
+    filter: grayscale(100%);
+    /* Adicionando a propriedade transition para fazer uma transição suave entre os estados do elemento */
+    transition: all .2s ease-in;
+}
+
+/* Criando uma regra para a classe personagem quando o mouse está sobre ela */
+.personagem:hover {
+    /* Removendo a propriedade filter para fazer o elemento ficar colorido */
+    filter: none;
+}
+
+/* Criando uma regra para a classe shapes */
+.shapes {
+  height: 63px;
+  width: 63px;
+  background: grey;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 10px;
+  position: absolute;
+  top: 67px;
+  right: 10px;
+  /* Adicionando a propriedade transition para fazer uma transição suave entre os estados do elemento */
+  transition: all 0.2s ease-in;
+}
+
+/* Criando uma regra para a classe shapes quando o mouse está sobre ela */
+.shapes:hover {
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  /* Adicionando a propriedade transform para fazer o elemento rotacionar e escalar quando o mouse está sobre ele */
+  transform: rotate(360deg) scale(1.5);
+}
+.personagem {
+  /* Adicionando a propriedade filter para fazer o elemento ficar em preto e branco */
+  filter: grayscale(100%);
+  /* Adicionando a propriedade transition para fazer uma transição suave entre os estados do elemento */
+  transition: all .2s ease-in;
+}
+
+/* Criando uma regra para a classe personagem quando o mouse está sobre ela */
+.personagem:hover {
+  /* Removendo a propriedade filter para fazer o elemento ficar colorido */
+  filter: none;
+}
+
